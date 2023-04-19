@@ -27,12 +27,14 @@ html {
 
 .team-card-col {
     /* border: solid red; */
-    overflow-inline: scroll;
     width: 81.5625em;
+    min-height: 55vh;
+    overflow-y: scroll;
+    white-space: nowrap;
 }
 
 .team-card {
-    width: 18.75em; /* 300px */
+    min-width: 18.75em; /* 300px */
     height: 25em; /* 400px */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
