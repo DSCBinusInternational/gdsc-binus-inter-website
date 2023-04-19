@@ -6,6 +6,7 @@
 html {
     /* css variables */
     --illustration-bg: #D9D9D9;
+    scroll-behavior: smooth;
 }
 
 .navbar {
