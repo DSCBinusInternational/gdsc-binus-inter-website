@@ -28,7 +28,7 @@ html {
 .team-card-col {
     /* border: solid red; */
     width: 81.5625em;
-    min-height: 55vh;
+    min-height: 55vh !important;
     overflow-y: scroll;
     white-space: nowrap;
 }
