@@ -81,6 +81,12 @@ html {
     z-index: 2;
 }
 
+#person-container-1:hover #person-img-1 {
+    transform: 
+        scale(1.4)
+        translateY(-1.5rem);
+}
+
 /* Dio */
 #person-img-2 {
     z-index: 2;
@@ -89,26 +95,15 @@ html {
     transform: scale(2.8);
 }
 
-/* Jj */
-#person-img-3 {
-    transform: scale(1.3);
-}
-
-/* Jason C */
-#person-img-4 {
-    transform: scale(2);
-}
-
-#person-container-1:hover #person-img-1 {
-    transform: 
-        scale(1.4)
-        translateY(-1.5rem);
-}
-
 #person-container-2:hover #person-img-2 {
     transform: 
         scale(2.7)
         translateY(-1.1rem);
+}
+
+/* Jj */
+#person-img-3 {
+    transform: scale(1.3);
 }
 
 #person-container-3:hover #person-img-3 {
@@ -117,10 +112,105 @@ html {
         translateY(-1.5rem);
 }
 
+/* Jason C */
+#person-img-4 {
+    transform: scale(2);
+}
+
 #person-container-4:hover #person-img-4 {
     transform: 
         scale(2)
         translateY(-1.1rem);
+}
+
+/* Nadja */
+#person-img-5 {
+    position: relative;
+    left: -5%;
+    transform: scale(2.6);
+    transform: translateX(3);
+}
+
+#person-container-5:hover #person-img-5 {
+    transform: 
+        scale(2.7)
+        translateY(-0.7rem);
+}
+
+/* Joshua */
+#person-img-6 {
+    transform: scale(2);
+}
+
+#person-container-6:hover #person-img-6 {
+    transform: 
+        scale(2.1)
+        translateY(-0.8rem);
+}
+
+/* Rafa */
+#person-img-8 {
+    transform: 
+        scale(1.9)
+        translateY(-2.1rem);
+}
+
+#person-container-8:hover #person-img-8 {
+    transform: 
+        scale(2.1)
+        translateY(-2.8rem);
+}
+
+/* Syahluna */
+#person-img-10 {
+    transform: 
+        scale(2)
+        translateY(-2.1rem);
+}
+
+#person-container-10:hover #person-img-10 {
+    transform: 
+        scale(2.2)
+        translateY(-2.9rem);
+}
+
+/* Raihan */
+#person-img-11 {
+    transform: 
+        scale(2.6)
+        translateY(1.2rem);
+}
+
+#person-container-11:hover #person-img-11 {
+    transform: 
+        scale(2.8)
+        translateY(0.5rem);
+}
+
+/* Michail */
+#person-img-12 {
+    transform: 
+        scale(1.6)
+        translateY(-0.9rem);
+}
+
+#person-container-12:hover #person-img-12 {
+    transform: 
+        scale(1.7)
+        translateY(-1.7rem);
+}
+
+/* Izam */
+#person-img-13 {
+    transform: 
+        scale(2)
+        translateY(-0.2rem);
+}
+
+#person-container-13:hover #person-img-13 {
+    transform: 
+        scale(2.2)
+        translateY(-0.7rem);
 }
 
 .person-circle {
