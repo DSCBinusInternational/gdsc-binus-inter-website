@@ -6,7 +6,13 @@
 html {
     /* css variables */
     --illustration-bg: #D9D9D9;
+    --font-color-gray: #545050;
+
     scroll-behavior: smooth;
+}
+
+.font-color-gray {
+    color: var(--font-color-gray);
 }
 
 .navbar {
@@ -269,4 +275,39 @@ html {
     display: inline-block;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* previous events */
+#previous-event-col {
+    min-height: 40vh !important;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+#previous-event-heading {
+    font-size: x-large;
+}
+
+.previous-event-img-box {
+    height: 7em;
+}
+
+.previous-event-card:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.previous-event-card {
+    min-width: 30em !important; /* 480px */
+    height: 18.75em; /* 300px */
+    border-radius: 20px;
+    border: 1.4px solid var(--illustration-bg);
+    transition: 200ms;
+}
+
+#previous-event-flutter {
+    width: 4em;
+}
+
+#previous-event-minecraft {
+    width: 6em;
 }
