@@ -20,6 +20,15 @@ html {
     border-bottom: solid var(--illustration-bg);
 }
 
+.navbar-toggler{
+    outline: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar {
+        padding-inline: 3em;
+    }
+} 
 /* bootstrap container */
 .container-fluid {
     padding-inline: 8.375em;
