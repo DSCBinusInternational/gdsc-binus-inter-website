@@ -7,8 +7,10 @@ html {
     /* css variables */
     --illustration-bg: #D9D9D9;
     --font-color-gray: #545050;
+}
 
-    scroll-behavior: smooth;
+.cursor-pointer:hover {
+    cursor: pointer;
 }
 
 .font-color-gray {
