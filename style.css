@@ -47,6 +47,7 @@ html {
     min-height: 55vh !important;
     overflow-y: scroll;
     white-space: nowrap;
+    align-items: center;
 }
 
 .team-card {
@@ -56,6 +57,16 @@ html {
     border-radius: 20px;
     border-bottom: solid #D9D9D9;
     /* border-top: solid var(--illustration-bg); */
+}
+
+#cardsBox {
+   display: inline-flex; 
+   /* border: solid red; */
+   /* overflow-x: hidden; */
+}
+
+.cards-rows {
+    display: flex;
 }
 
 .person {
