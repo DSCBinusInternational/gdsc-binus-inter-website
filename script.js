@@ -1,14 +1,14 @@
 function teamCardInfiniteScroll() {
-    gsap.to("#cards-first-row", {
+    gsap.to("#first-event-card-box", {
         x: "-100%",
         ease: "linear",
-        duration: 40,
+        duration: 15,
         repeat: -1,
     })
-    gsap.to("#cards-second-row", {
+    gsap.to("#second-event-card-box", {
         x: "-100%",
         ease: "linear",
-        duration: 40,
+        duration: 15,
         repeat: -1,
     })
 }
@@ -48,7 +48,10 @@ $(document).ready(() => {
     
     $("#nav-link-events").on("click", () => {
         gsap.effects.scrollTo(window, {y: "#latest-event", offsetY: "70",})
-    
+    });
+
+    $("#nav-link-faq").on("click", () => {
+        gsap.effects.scrollTo(window, {y: "#faq", offsetY: "0",})
     });
 
     $("#latest-event .card").on("click", () => {
@@ -70,8 +73,5 @@ $(document).ready(() => {
             duration: 1,
         })
     })
-
-
-
 
 });
