@@ -271,6 +271,36 @@ html {
         translateY(-1.2rem);
 }
 
+/* Philip */
+#person-img-14 {
+    transform: 
+        scale(2)
+        translateY(-2rem)
+        translateX(0.5rem);
+    }
+    
+    #person-container-14:hover #person-img-14 {
+        transform: 
+        scale(2)
+        translateX(0.5rem)
+        translateY(-2.5rem);
+}
+
+/* Steph */
+#person-img-15 {
+    transform: 
+        scale(1.5)
+        translateY(-0.5rem)
+        translateX(0.5rem);
+    }
+    
+    #person-container-15:hover #person-img-15 {
+        transform:
+        scale(1.6)
+        translateX(0.5rem)
+        translateY(-1.4rem);
+}
+
 .person-circle {
     position: absolute;
     aspect-ratio: 1 / 1;
