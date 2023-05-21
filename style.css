@@ -45,7 +45,8 @@ html {
     /* border: solid red; */
     width: 81.5625em;
     min-height: 55vh !important;
-    overflow-y: scroll;
+    height: 26em;
+    overflow-y: hidden;
     white-space: nowrap;
 }
 
@@ -264,10 +265,6 @@ html {
     min-width: 500px;
 }
 
-.h-600{
-    height: 600px;
-}
-
 .landing-info{
     display: flex;
     flex-direction: column;
@@ -458,7 +455,7 @@ html {
 
 #latest-event .card{
     border-radius: 20px;
-    min-width: 30em;
+    /* min-width: 30em; */
     height: 18.75em;
     border: 1.4px solid var(--illustration-bg);
     overflow: hidden;
@@ -498,7 +495,8 @@ html {
   }  
 /* previous events */
 #previous-event-col {
-    min-height: 40vh !important;
+    /* min-height: 40vh !important; */
+    height: 20em;
     overflow-y: scroll;
     white-space: nowrap;
 }
@@ -530,3 +528,14 @@ html {
 #previous-event-minecraft {
     width: 6em;
 }
+
+/* Horizontal scrollbar */
+
+.h-scrollbar::-webkit-scrollbar {
+    height: 10px;
+}
+
+.h-scrollbar::-webkit-scrollbar-thumb:hover{
+    background: rgba(0, 0, 0, 0.199);
+    border-radius: 5px;
+  }
