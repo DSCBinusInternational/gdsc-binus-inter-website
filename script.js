@@ -25,12 +25,30 @@ gsap.registerEffect({
             scrollTo: { y: config.y, offsetY: config.offsetY }});
 }});
 
+function pulseAnimation(){
+    let circles = document.querySelectorAll("[class ^= \"circle\"]");
+    circles.forEach(e => {
+        e.animate([
+            {transform: "scale(500)", offset : 0.9},
+            {opacity: 0},
+        ],
+        {
+            duration: 500,
+            easing: "ease-out"
+        }
+        )
+    })
+}
+
 // jQuery
 $(document).ready(() => {
     $("#nav-link-team").on("click", () => {
         gsap.effects.scrollTo(window, {y: "#team", offsetY: "-10",})
-    })
+    });
     $("#nav-link-events").on("click", () => {
         gsap.effects.scrollTo(window, {y: "#latest-event", offsetY: "70",})
-    })
+    });
+    $("#latest-event .card").on("click", () => {
+        pulseAnimation();
+    });
 });
