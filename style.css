@@ -7,8 +7,10 @@ html {
     /* css variables */
     --illustration-bg: #D9D9D9;
     --font-color-gray: #545050;
+}
 
-    scroll-behavior: smooth;
+.cursor-pointer:hover {
+    cursor: pointer;
 }
 
 .font-color-gray {
@@ -48,6 +50,7 @@ html {
     height: 26em;
     overflow-y: hidden;
     white-space: nowrap;
+    align-items: center;
 }
 
 .team-card {
@@ -57,6 +60,16 @@ html {
     border-radius: 20px;
     border-bottom: solid #D9D9D9;
     /* border-top: solid var(--illustration-bg); */
+}
+
+#cardsBox {
+   display: inline-flex; 
+   /* border: solid red; */
+   /* overflow-x: hidden; */
+}
+
+.cards-rows {
+    display: flex;
 }
 
 .person {

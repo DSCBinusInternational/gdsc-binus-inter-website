@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="toggler">
                 <ul class="navbar-nav ml-auto"> <!-- mr-auto: margin auto -->
                     <li class="nav-item ml-5">
-                        <a class="nav-link" href="#latest-event">Events<span class="sr-only">(current)</span></a>
+                        <a class="nav-link cursor-pointer" id="nav-link-events" >Events<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item ml-5">
@@ -33,7 +33,7 @@
                     </li>
 
                     <li class="nav-item ml-5">
-                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link cursor-pointer" id="nav-link-team">Team</a>
                     </li>
 
                     <li class="nav-item ml-5">
@@ -55,19 +55,9 @@
                         <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                    </li> -->
+                        </li> -->
                 
-                <!-- bootstrap disabled item -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li> -->
                 </ul>
-
-                <!-- bootstrap search bar -->
-                <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
             </div>
         </nav>
 
@@ -229,245 +219,490 @@
                     <!-- team cards -->
                     <div class="row my-5 d-flex">
 
-                        <div class="col d-inline-flex align-items-center justify-content-between team-card-col h-scrollbar">
+                        <div class="col team-card-col" id="cardsBox">
                             
-                            <!-- 1# card Arish -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <!-- pop-out effect -->
-                                <div class="person">
-                                    <div class="person-container" id="person-container-1">
-                                        <img class="person-circle" src="./assets/bg-pattern/jackson-david-yXZ8PKZFrIE-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-1" src="./assets/core-team/Arish-removebg-preview.png" alt="">
+                            <div class="cards-rows" id="cards-first-row">
+                                <!-- 1# card Arish -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-1">
+                                            <img class="person-circle" src="./assets/bg-pattern/jackson-david-yXZ8PKZFrIE-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-1" src="./assets/core-team/Arish-removebg-preview.png" alt="">
+                                        </div>
                                     </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Arish Mada</h2>
+                                        <hr>
+                                        <p class="text-center">Presenter</p>
+                                    </div>
+    
                                 </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Arish Mada</h2>
-                                    <hr>
-                                    <p class="text-center">Presenter</p>
+    
+                                <!-- 2# card Dio -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-2">
+                                            <img class="person-circle" src="./assets/bg-pattern/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-2" src="./assets/core-team/Alexandro_Joe_Claudio-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Alexandro Joe</h2>
+                                        <hr>
+                                        <p class="text-center">Presenter</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 3# card Jj -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-3">
+                                            <img class="person-circle" src="./assets/bg-pattern/thitiphum-koonjantuek-TFqjlTmkeyY-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-3" src="./assets/core-team/JJ-2.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Jason Jeremy</h2>
+                                        <hr>
+                                        <p class="text-center">Advisor</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 4# card Jason C -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-4">
+                                            <img class="person-circle" src="./assets/bg-pattern/simon-lee-zft-W1kVEhg-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-4" src="./assets/core-team/Runway_2023-03-22T13_33_19.698Z_Expand_Image-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Jason Christian</h2>
+                                        <hr>
+                                        <p class="text-center">Advisor</p>
+                                    </div>
+    
+                                </div>                            
+    
+                                <!-- 5# card Nadja -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-5">
+                                            <img class="person-circle" src="./assets/bg-pattern/nathan-duck-Jo5FUEkhB_4-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-5" src="./assets/core-team/Nadja-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Nadja Jasmine</h2>
+                                        <hr>
+                                        <p class="text-center">Communications</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 6# card Josh -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-6">
+                                            <img class="person-circle" src="./assets/bg-pattern/valentin-salja-Z3oT1r3Pq0Y-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-6" src="./assets/core-team/Joshua-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Joshua Alexander</h2>
+                                        <hr>
+                                        <p class="text-center">Communications</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 7# card Rachel -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-7">
+                                            <img class="person-circle" src="./assets/bg-pattern/david-pisnoy-RiGGe25WUw4-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-7" src="./assets/core-team/Rachel-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Rachel Anastasia</h2>
+                                        <hr>
+                                        <p class="text-center">Communications</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 8# card Rafa -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-8">
+                                            <img class="person-circle" src="./assets/bg-pattern/scott-webb-aHhhdKUP77M-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-8" src="./assets/core-team/rafa.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Rafael Sutiono</h2>
+                                        <hr>
+                                        <p class="text-center">Secretary</p>
+                                    </div>
+    
+                                </div>  
+                                <!-- 9# card Maria -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-5">
+                                            <img class="person-circle" src="./assets/bg-pattern/jason-leung-wHddViTmSvA-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-5" src="./assets/core-team/Nadja-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Maria Clarin</h2>
+                                        <hr>
+                                        <p class="text-center">Designer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 10# card Syahluna -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-10">
+                                            <img class="person-circle" src="./assets/bg-pattern/anthony-melone-F4i5l_HY1E8-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-10" src="./assets/core-team/Syahluna_Allegra_Berrindo-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Syahluna Allegra</h2>
+                                        <hr>
+                                        <p class="text-center">Designer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 11# card Raihan -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-11">
+                                            <img class="person-circle" src="./assets/bg-pattern/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-11" src="./assets/core-team/Raihan_Zulfi-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Raihan Zulfi</h2>
+                                        <hr>
+                                        <p class="text-center">Developer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 12# card Michail -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-12">
+                                            <img class="person-circle" src="./assets/bg-pattern/magicpattern-am-yg8wLLIo-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-12" src="./assets/core-team/Michail_Bryan-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Michail Bryan</h2>
+                                        <hr>
+                                        <p class="text-center">Developer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 13# card Izam -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-13">
+                                            <img class="person-circle" src="./assets/bg-pattern/engin-akyurt-pxA3AcRb0UE-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-13" src="./assets/core-team/Izam-PhotoRoom.png-PhotoRoom.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Izam Ghali</h2>
+                                        <hr>
+                                        <p class="text-center">Developer</p>
+                                    </div>
+    
                                 </div>
 
                             </div>
 
-                            <!-- 2# card Dio -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <!-- pop-out effect -->
-                                <div class="person">
-                                    <div class="person-container" id="person-container-2">
-                                        <img class="person-circle" src="./assets/bg-pattern/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-2" src="./assets/core-team/Alexandro_Joe_Claudio-removebg-preview.png" alt="">
+                            <div class="cards-rows" id="cards-second-row">
+                                <!-- 1# card Arish -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-1">
+                                            <img class="person-circle" src="./assets/bg-pattern/jackson-david-yXZ8PKZFrIE-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-1" src="./assets/core-team/Arish-removebg-preview.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Alexandro Joe</h2>
-                                    <hr>
-                                    <p class="text-center">Presenter</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 3# card Jj -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <div class="person">
-                                    <div class="person-container" id="person-container-3">
-                                        <img class="person-circle" src="./assets/bg-pattern/thitiphum-koonjantuek-TFqjlTmkeyY-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-3" src="./assets/core-team/JJ-2.png" alt="">
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Arish Mada</h2>
+                                        <hr>
+                                        <p class="text-center">Presenter</p>
                                     </div>
+    
                                 </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Jason Jeremy</h2>
-                                    <hr>
-                                    <p class="text-center">Advisor</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 4# card Jason C -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <div class="person">
-                                    <div class="person-container" id="person-container-4">
-                                        <img class="person-circle" src="./assets/bg-pattern/simon-lee-zft-W1kVEhg-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-4" src="./assets/core-team/Runway_2023-03-22T13_33_19.698Z_Expand_Image-removebg-preview.png" alt="">
+    
+                                <!-- 2# card Dio -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-2">
+                                            <img class="person-circle" src="./assets/bg-pattern/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-2" src="./assets/core-team/Alexandro_Joe_Claudio-removebg-preview.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Jason Christian</h2>
-                                    <hr>
-                                    <p class="text-center">Advisor</p>
-                                </div>
-
-                            </div>                            
-
-                            <!-- 5# card Nadja -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <!-- pop-out effect -->
-                                <div class="person">
-                                    <div class="person-container" id="person-container-5">
-                                        <img class="person-circle" src="./assets/bg-pattern/nathan-duck-Jo5FUEkhB_4-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-5" src="./assets/core-team/Nadja-removebg-preview.png" alt="">
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Alexandro Joe</h2>
+                                        <hr>
+                                        <p class="text-center">Presenter</p>
                                     </div>
+    
                                 </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Nadja Jasmine</h2>
-                                    <hr>
-                                    <p class="text-center">Communications</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 6# card Josh -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <!-- pop-out effect -->
-                                <div class="person">
-                                    <div class="person-container" id="person-container-6">
-                                        <img class="person-circle" src="./assets/bg-pattern/valentin-salja-Z3oT1r3Pq0Y-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-6" src="./assets/core-team/Joshua-removebg-preview.png" alt="">
+    
+                                <!-- 3# card Jj -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-3">
+                                            <img class="person-circle" src="./assets/bg-pattern/thitiphum-koonjantuek-TFqjlTmkeyY-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-3" src="./assets/core-team/JJ-2.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Joshua Alexander</h2>
-                                    <hr>
-                                    <p class="text-center">Communications</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 7# card Rachel -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <div class="person">
-                                    <div class="person-container" id="person-container-7">
-                                        <img class="person-circle" src="./assets/bg-pattern/david-pisnoy-RiGGe25WUw4-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-7" src="./assets/core-team/Rachel-removebg-preview.png" alt="">
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Jason Jeremy</h2>
+                                        <hr>
+                                        <p class="text-center">Advisor</p>
                                     </div>
+    
                                 </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Rachel Anastasia</h2>
-                                    <hr>
-                                    <p class="text-center">Communications</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 8# card Rafa -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <div class="person">
-                                    <div class="person-container" id="person-container-8">
-                                        <img class="person-circle" src="./assets/bg-pattern/scott-webb-aHhhdKUP77M-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-8" src="./assets/core-team/rafa.png" alt="">
+    
+                                <!-- 4# card Jason C -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-4">
+                                            <img class="person-circle" src="./assets/bg-pattern/simon-lee-zft-W1kVEhg-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-4" src="./assets/core-team/Runway_2023-03-22T13_33_19.698Z_Expand_Image-removebg-preview.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Rafael Sutiono</h2>
-                                    <hr>
-                                    <p class="text-center">Secretary</p>
-                                </div>
-
-                            </div>  
-
-                            <!-- 9# card Maria -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <!-- pop-out effect -->
-                                <div class="person">
-                                    <div class="person-container" id="person-container-5">
-                                        <img class="person-circle" src="./assets/bg-pattern/jason-leung-wHddViTmSvA-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-5" src="./assets/core-team/Nadja-removebg-preview.png" alt="">
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Jason Christian</h2>
+                                        <hr>
+                                        <p class="text-center">Advisor</p>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Maria Clarin</h2>
-                                    <hr>
-                                    <p class="text-center">Designer</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 10# card Syahluna -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <!-- pop-out effect -->
-                                <div class="person">
-                                    <div class="person-container" id="person-container-10">
-                                        <img class="person-circle" src="./assets/bg-pattern/anthony-melone-F4i5l_HY1E8-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-10" src="./assets/core-team/Syahluna_Allegra_Berrindo-removebg-preview.png" alt="">
+    
+                                </div>                            
+    
+                                <!-- 5# card Nadja -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-5">
+                                            <img class="person-circle" src="./assets/bg-pattern/nathan-duck-Jo5FUEkhB_4-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-5" src="./assets/core-team/Nadja-removebg-preview.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Syahluna Allegra</h2>
-                                    <hr>
-                                    <p class="text-center">Designer</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 11# card Raihan -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <div class="person">
-                                    <div class="person-container" id="person-container-11">
-                                        <img class="person-circle" src="./assets/bg-pattern/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-11" src="./assets/core-team/Raihan_Zulfi-removebg-preview.png" alt="">
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Nadja Jasmine</h2>
+                                        <hr>
+                                        <p class="text-center">Communications</p>
                                     </div>
+    
                                 </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Raihan Zulfi</h2>
-                                    <hr>
-                                    <p class="text-center">Developer</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 12# card Michail -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <div class="person">
-                                    <div class="person-container" id="person-container-12">
-                                        <img class="person-circle" src="./assets/bg-pattern/magicpattern-am-yg8wLLIo-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-12" src="./assets/core-team/Michail_Bryan-removebg-preview.png" alt="">
+    
+                                <!-- 6# card Josh -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-6">
+                                            <img class="person-circle" src="./assets/bg-pattern/valentin-salja-Z3oT1r3Pq0Y-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-6" src="./assets/core-team/Joshua-removebg-preview.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Michail Bryan</h2>
-                                    <hr>
-                                    <p class="text-center">Developer</p>
-                                </div>
-
-                            </div>
-
-                            <!-- 13# card Izam -->
-                            <div class="card team-card mr-lg-3">
-                                
-                                <!-- pop-out effect -->
-                                <div class="person">
-                                    <div class="person-container" id="person-container-13">
-                                        <img class="person-circle" src="./assets/bg-pattern/engin-akyurt-pxA3AcRb0UE-unsplash.jpg" alt="">
-                                        <img class="person-img" id="person-img-13" src="./assets/core-team/Izam-PhotoRoom.png-PhotoRoom.png" alt="">
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Joshua Alexander</h2>
+                                        <hr>
+                                        <p class="text-center">Communications</p>
                                     </div>
+    
                                 </div>
-
-                                <div class="card-body">
-                                    <h2 class="text-center">Izam Ghali</h2>
-                                    <hr>
-                                    <p class="text-center">Developer</p>
+    
+                                <!-- 7# card Rachel -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-7">
+                                            <img class="person-circle" src="./assets/bg-pattern/david-pisnoy-RiGGe25WUw4-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-7" src="./assets/core-team/Rachel-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Rachel Anastasia</h2>
+                                        <hr>
+                                        <p class="text-center">Communications</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 8# card Rafa -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-8">
+                                            <img class="person-circle" src="./assets/bg-pattern/scott-webb-aHhhdKUP77M-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-8" src="./assets/core-team/rafa.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Rafael Sutiono</h2>
+                                        <hr>
+                                        <p class="text-center">Secretary</p>
+                                    </div>
+    
+                                </div>  
+                                <!-- 9# card Maria -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-5">
+                                            <img class="person-circle" src="./assets/bg-pattern/jason-leung-wHddViTmSvA-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-5" src="./assets/core-team/Nadja-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Maria Clarin</h2>
+                                        <hr>
+                                        <p class="text-center">Designer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 10# card Syahluna -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-10">
+                                            <img class="person-circle" src="./assets/bg-pattern/anthony-melone-F4i5l_HY1E8-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-10" src="./assets/core-team/Syahluna_Allegra_Berrindo-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Syahluna Allegra</h2>
+                                        <hr>
+                                        <p class="text-center">Designer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 11# card Raihan -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-11">
+                                            <img class="person-circle" src="./assets/bg-pattern/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-11" src="./assets/core-team/Raihan_Zulfi-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Raihan Zulfi</h2>
+                                        <hr>
+                                        <p class="text-center">Developer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 12# card Michail -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-12">
+                                            <img class="person-circle" src="./assets/bg-pattern/magicpattern-am-yg8wLLIo-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-12" src="./assets/core-team/Michail_Bryan-removebg-preview.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Michail Bryan</h2>
+                                        <hr>
+                                        <p class="text-center">Developer</p>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- 13# card Izam -->
+                                <div class="card team-card mr-lg-3">
+                                    
+                                    <!-- pop-out effect -->
+                                    <div class="person">
+                                        <div class="person-container" id="person-container-13">
+                                            <img class="person-circle" src="./assets/bg-pattern/engin-akyurt-pxA3AcRb0UE-unsplash.jpg" alt="">
+                                            <img class="person-img" id="person-img-13" src="./assets/core-team/Izam-PhotoRoom.png-PhotoRoom.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body">
+                                        <h2 class="text-center">Izam Ghali</h2>
+                                        <hr>
+                                        <p class="text-center">Developer</p>
+                                    </div>
+    
                                 </div>
 
                             </div>
@@ -485,8 +720,13 @@
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+        <!-- main javascript -->
+        <script src="./script.js"></script>
     </body>
 </html>
