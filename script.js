@@ -48,7 +48,10 @@ $(document).ready(() => {
     
     $("#nav-link-events").on("click", () => {
         gsap.effects.scrollTo(window, {y: "#latest-event", offsetY: "70",})
-    
+    });
+
+    $("#nav-link-faq").on("click", () => {
+        gsap.effects.scrollTo(window, {y: "#faq", offsetY: "0",})
     });
 
     $("#latest-event .card").on("click", () => {
@@ -70,8 +73,5 @@ $(document).ready(() => {
             duration: 1,
         })
     })
-
-
-
 
 });
