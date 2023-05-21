@@ -45,14 +45,15 @@ $(document).ready(() => {
     $("#nav-link-team").on("click", () => {
         gsap.effects.scrollTo(window, {y: "#team", offsetY: "-10",})
     });
+    
     $("#nav-link-events").on("click", () => {
         gsap.effects.scrollTo(window, {y: "#latest-event", offsetY: "70",})
-    $("#latest-event .card").on("click", () => {
-        pulseAnimation();
+    
     });
-});
-    })
 
+    $("#latest-event .card").on("click", () => {
+            pulseAnimation();
+        });
     
     $("#nav-link-contact").on("click", () => {
         gsap.to("#contact-page", {
@@ -61,6 +62,7 @@ $(document).ready(() => {
             duration: 1,
         })
     })
+
     $("#cancel-icon").on("click", () => {
         gsap.to("#contact-page", {
             y: "-100%",
