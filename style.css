@@ -457,7 +457,7 @@ html {
     transition: all 0.2s ease-out;
 } */
 
-@keyframes circleAnimation {
+/* @keyframes circleAnimation {
     90% {
         transform: scale(500);
     }
@@ -465,7 +465,7 @@ html {
     100% {
         background-color: transparent;
     }
-}
+} */
 
 #latest-event .card{
     border-radius: 20px;
@@ -475,10 +475,10 @@ html {
     overflow: hidden;
 }
 
-#latest-event .card:hover [class ^= "circle"]{
+/* #latest-event .card:active [class ^= "circle"]{
     animation: circleAnimation 0.5s ease-in forwards;
     transition: all 3s ease-out;
-}
+} */
 
 .card-header{
     position: relative;
@@ -553,6 +553,10 @@ html {
     background: rgba(0, 0, 0, 0.199);
     border-radius: 5px;
   }
+
+#faq{
+    margin-top: 5rem;
+}
 
 #faq > h1{
     font-size: 2rem;
