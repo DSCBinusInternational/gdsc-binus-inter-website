@@ -84,8 +84,7 @@ html {
 
 #cardsBox {
    display: inline-flex; 
-   /* border: solid red; */
-   /* overflow-x: hidden; */
+   overflow-x: scroll;
 }
 
 .cards-rows {
@@ -529,9 +528,15 @@ html {
 /* previous events */
 #previous-event-col {
     /* min-height: 40vh !important; */
-    height: 20em;
+    height: 24em;
     overflow-y: scroll;
+    /* border: solid red; */
     white-space: nowrap;
+}
+
+.event-card-box {
+    display: flex;
+    align-items: center;
 }
 
 #previous-event-heading {

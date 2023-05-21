@@ -1,14 +1,14 @@
 function teamCardInfiniteScroll() {
-    gsap.to("#cards-first-row", {
+    gsap.to("#first-event-card-box", {
         x: "-100%",
         ease: "linear",
-        duration: 40,
+        duration: 15,
         repeat: -1,
     })
-    gsap.to("#cards-second-row", {
+    gsap.to("#second-event-card-box", {
         x: "-100%",
         ease: "linear",
-        duration: 40,
+        duration: 15,
         repeat: -1,
     })
 }
