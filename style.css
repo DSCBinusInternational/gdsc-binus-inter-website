@@ -49,6 +49,7 @@ html {
     min-height: 55vh !important;
     height: 26em;
     overflow-y: hidden;
+    overflow-x: hidden;
     white-space: nowrap;
     align-items: center;
 }
@@ -475,7 +476,7 @@ html {
 }
 
 #latest-event .card:hover [class ^= "circle"]{
-    animation: circleAnimation 0.5s ease-in;
+    animation: circleAnimation 0.5s ease-in forwards;
     transition: all 3s ease-out;
 }
 
@@ -552,3 +553,24 @@ html {
     background: rgba(0, 0, 0, 0.199);
     border-radius: 5px;
   }
+
+#faq > h1{
+    font-size: 2rem;
+}
+
+.faq-container{
+    display: grid;
+    margin-top: 6rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 5rem;
+}
+
+.question{
+    font-size: 1.2rem;
+}
+
+.question h1{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
