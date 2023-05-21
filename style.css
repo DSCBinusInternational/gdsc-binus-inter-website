@@ -31,6 +31,25 @@ html {
         padding-inline: 3em;
     }
 } 
+
+/* contact page */
+#contact-page {
+    z-index: 1;
+    transform: translateY(-100%);
+    background-color: #fff;
+    border-bottom: solid var(--illustration-bg);
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    padding-inline: 10rem;
+}
+
+#cancel-icon-box {
+    display: flex;
+    justify-content: end;
+    fill: var(--illustration-bg);
+}
+
 /* bootstrap container */
 .container-fluid {
     padding-inline: 8.375em;
