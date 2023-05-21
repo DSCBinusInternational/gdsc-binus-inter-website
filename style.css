@@ -529,7 +529,7 @@ html {
 #previous-event-col {
     /* min-height: 40vh !important; */
     height: 24em;
-    overflow-y: scroll;
+    overflow: hidden;
     /* border: solid red; */
     white-space: nowrap;
 }
@@ -617,4 +617,8 @@ html {
 
 .event > *{
     margin: 1rem;
+}
+
+.event > p {
+    font-size: 1.3rem;
 }
