@@ -47,8 +47,29 @@ $(document).ready(() => {
     });
     $("#nav-link-events").on("click", () => {
         gsap.effects.scrollTo(window, {y: "#latest-event", offsetY: "70",})
-    });
     $("#latest-event .card").on("click", () => {
         pulseAnimation();
     });
+});
+    })
+
+    
+    $("#nav-link-contact").on("click", () => {
+        gsap.to("#contact-page", {
+            y: "0%",
+            ease: "power4.inOut",
+            duration: 1,
+        })
+    })
+    $("#cancel-icon").on("click", () => {
+        gsap.to("#contact-page", {
+            y: "-100%",
+            ease: "power4.inOut",
+            duration: 1,
+        })
+    })
+
+
+
+
 });
