@@ -569,9 +569,15 @@ html {
 }
 
 .h-scrollbar::-webkit-scrollbar-thumb:hover{
-    background: rgba(0, 0, 0, 0.199);
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
   }
+
+.h-scrollbar::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
 
 #faq{
     margin-top: 5rem;
