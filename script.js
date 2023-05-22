@@ -1,3 +1,12 @@
+function addBorderBottomAfterScroll() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      gsap.set("nav", {borderBottom: "2px solid #D9D9D9"})
+    } else {
+        gsap.set("nav", {borderBottom: "2px solid white"})
+    }
+}
+window.onscroll = function() {addBorderBottomAfterScroll()};
+
 function teamCardInfiniteScroll() {
     gsap.to("#first-event-card-box", {
         x: "-100%",
@@ -12,9 +21,7 @@ function teamCardInfiniteScroll() {
         repeat: -1,
     })
 }
-
 teamCardInfiniteScroll()
-
 
 gsap.registerEffect({
     name: "scrollTo",

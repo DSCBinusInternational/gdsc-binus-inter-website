@@ -19,7 +19,8 @@ html {
 
 .navbar {
     padding-inline: 8.375em; /* 134px */
-    border-bottom: solid var(--illustration-bg);
+    /* border-bottom: solid var(--illustration-bg); */
+    /* border-bottom: 3px solid red; */
 }
 
 .navbar-toggler{
