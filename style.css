@@ -233,6 +233,19 @@ html {
         translateY(-3.3rem);
 }
 
+/* Maria */
+#person-img-9 {
+    transform: 
+        scale(1.3)
+        translateY(1.4rem);
+}
+
+#person-container-9:hover #person-img-9 {
+    transform: 
+        scale(1.3)
+        translateY(-0.5rem);
+}
+
 /* Syahluna */
 #person-img-10 {
     transform: 
