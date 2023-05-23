@@ -40,13 +40,37 @@ html {
     background-color: #fff;
     width: 100vw;
     height: 100vh;
-    position: sticky;
+    position: fixed;
     z-index: 2;
     overflow: hidden;
 }
 
-.donuts {
+.balls {
     position: absolute;
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vh;
+    visibility: hidden;
+}
+
+#ball1 {
+    background-color: #EA4335;
+}
+
+#ball2 {
+    background-color: #0F9D58;
+}
+
+#ball3 {
+    background-color: #4285F4;
+}
+
+#ball4 {
+    background-color: #FBBC04;
+}
+
+#whiteBall {
+    background-color: #fff;
 }
 
 /* contact page */
