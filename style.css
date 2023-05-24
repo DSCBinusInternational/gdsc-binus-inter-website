@@ -426,6 +426,11 @@ html {
     }
 } */
 
+/* project  */
+.project-info p{
+    font-size: 30px;
+}
+
 /* about page */
 .about-info h1{
     font-size: 40px;
@@ -665,6 +670,7 @@ html {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
 
 
 
