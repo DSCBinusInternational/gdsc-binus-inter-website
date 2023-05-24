@@ -24,11 +24,10 @@ function teamCardInfiniteScroll() {
 teamCardInfiniteScroll()
 gsap.registerPlugin(ScrollTrigger);
 gsap.to("footer", {
-    x: "4%", 
+    x: "-7.5%", 
     scrollTrigger: {
         trigger: "footer",
-        scrub: 5,
-        // start: "top 95%",
+        scrub: 3,
         end: "top 40%",
     }
 })
