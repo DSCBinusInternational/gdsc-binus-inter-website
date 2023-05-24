@@ -8,6 +8,9 @@ html {
     --illustration-bg: #D9D9D9;
     --font-color-gray: #545050;
     --gdsc-green-color: #0F9D58;
+    --gdsc-red-color: #EA4335;
+    --gdsc-blue-color: #4285F4;
+    --gdsc-yellow-color: #FBBC04; 
 }
 
 .cursor-pointer:hover {
@@ -54,19 +57,19 @@ html {
 }
 
 #ball1 {
-    background-color: #EA4335;
+    background-color: var(--gdsc-red-color);
 }
 
 #ball2 {
-    background-color: #0F9D58;
+    background-color: var(--gdsc-green-color);
 }
 
 #ball3 {
-    background-color: #4285F4;
+    background-color: var(--gdsc-blue-color);
 }
 
 #ball4 {
-    background-color: #FBBC04;
+    background-color: var(--gdsc-yellow-color);
 }
 
 #whiteBall {
@@ -787,6 +790,38 @@ html {
 
 .event > p {
     font-size: 1.3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2%;
+    transform: translateX(-110%);
+    margin-inline: 0;
+    width: 80vw;
+    border: solid var(--illustration-bg);
+    border-top: solid var(--illustration-bg);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 20px -10px 15px hsla(0, 0%, 40%, 0.3);
+}
+
+#footerRight {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#footerMap {
+    max-width: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 40vh;
+}
+
+#footerDummy {
+    height: 1px;
+    width: 100vw;
 }
 
 .truncate {
