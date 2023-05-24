@@ -697,7 +697,7 @@ html {
     height: 24em;
     overflow: hidden;
     /* border: solid red; */
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .event-card-box {
@@ -787,4 +787,9 @@ html {
 
 .event > p {
     font-size: 1.3rem;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
