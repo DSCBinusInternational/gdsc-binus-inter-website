@@ -108,8 +108,6 @@ function preloader() {
 
 preloader();
 
-
-
 // jQuery
 $(document).ready(() => {
     $("#nav-link-team").on("click", () => {
@@ -145,5 +143,3 @@ $(document).ready(() => {
     })
 
 });
-
-
