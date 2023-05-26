@@ -105,8 +105,23 @@ function preloader() {
         opacity: 0,
     }, ">-1.7");
 }
-
 preloader();
+
+function darkModeClicked() {
+    let toggleState = true;
+    const toggleAnimation = gsap.timeline({ paused: true });
+    toggleAnimation
+      .to("#darkModeToggle", { x: "100%", duration: 0.3, ease: "linear" });
+    darkModeBtn.addEventListener("click", () => {
+      if (toggleState) {
+        toggleAnimation.restart();
+      } else {
+        toggleAnimation.reverse();
+      }
+      toggleState = !toggleState;
+    });
+}
+  darkModeClicked();
 
 // jQuery
 $(document).ready(() => {
@@ -141,5 +156,4 @@ $(document).ready(() => {
             duration: 1,
         })
     })
-
 });
