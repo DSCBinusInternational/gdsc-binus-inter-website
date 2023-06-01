@@ -122,12 +122,17 @@ function darkModeClicked() {
         gsap.to(".navbar", {backgroundColor: standardBlack})
         gsap.to("#toggler a", {color: standardWhite})
         gsap.to("p", {color: standardWhite})
+        gsap.to("p", {color: standardWhite})
+        gsap.to("h1", {color: standardWhite})
+        gsap.to("h2", {color: standardWhite})
     } else {
         toggleAnimation.reverse();
         gsap.to("body", {backgroundColor: standardWhite})
         gsap.to(".navbar", {backgroundColor: standardWhite})
         gsap.to("#toggler a", {color: standardBlack})
         gsap.to("p", {color: standardBlack})
+        gsap.to("h1", {color: standardBlack})
+        gsap.to("h2", {color: standardBlack})
       }
       toggleState = !toggleState;
     });
