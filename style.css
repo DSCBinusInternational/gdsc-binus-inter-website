@@ -12,6 +12,8 @@ html {
     --gdsc-red-color: #EA4335;
     --gdsc-blue-color: #4285F4;
     --gdsc-yellow-color: #FBBC04; 
+
+    --standard-white: #fff;
 }
 
 .cursor-pointer:hover {
@@ -23,11 +25,16 @@ html {
 }
 
 .navbar {
+    background-color: var(--standard-white);
     padding-inline: 8.375em; /* 134px */
 }
 
 .navbar-toggler{
     outline: none;
+}
+
+#toggler a {
+    color: var(--font-color-gray);
 }
 
 @media screen and (max-width: 768px){

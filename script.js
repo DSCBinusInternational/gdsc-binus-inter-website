@@ -107,6 +107,9 @@ function preloader() {
 }
 preloader();
 
+let standardBlack = "#212121";
+let standardWhite = "#fff";
+
 function darkModeClicked() {
     let toggleState = true;
     const toggleAnimation = gsap.timeline({ paused: true });
@@ -115,8 +118,16 @@ function darkModeClicked() {
     darkModeBtn.addEventListener("click", () => {
       if (toggleState) {
         toggleAnimation.restart();
-      } else {
+        gsap.to("body", {backgroundColor: standardBlack})
+        gsap.to(".navbar", {backgroundColor: standardBlack})
+        gsap.to("#toggler a", {color: standardWhite})
+        gsap.to("p", {color: standardWhite})
+    } else {
         toggleAnimation.reverse();
+        gsap.to("body", {backgroundColor: standardWhite})
+        gsap.to(".navbar", {backgroundColor: standardWhite})
+        gsap.to("#toggler a", {color: standardBlack})
+        gsap.to("p", {color: standardBlack})
       }
       toggleState = !toggleState;
     });
