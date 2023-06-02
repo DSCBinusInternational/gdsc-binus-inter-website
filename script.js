@@ -59,6 +59,13 @@ function pulseAnimation(){
 function preloader() {
     let preloadTl = gsap.timeline();
 
+    gsap.set(".gallery-item-3", {
+        opacity: 0,
+    })
+    gsap.set(".gallery-item", {
+        opacity: 0,
+    })
+
     preloadTl.fromTo("#preloader img", {
         scale: 0.5,
         position: "absolute"
@@ -113,6 +120,18 @@ function preloader() {
         opacity: 1
     });
 
+    preloadTl.to(".gallery-item-3", {
+        duration: 0.5,
+        ease: "linear",
+        opacity: 1,
+    });
+
+    preloadTl.to(".gallery-item", {
+        duration: 0.5,
+        ease: "linear",
+        opacity: 1,
+    }, "<");
+
 
 }
 preloader();
@@ -161,12 +180,12 @@ $(document).ready(() => {
     });
 
     $("#nav-link-faq").on("click", () => {
-        gsap.effects.scrollTo(window, {y: "#faq", offsetY: "0",})
+        gsap.effects.scrollTo(window, {y: "#faq", offsetY: "120",})
     });
 
     $("#latest-event .card").on("click", () => {
             pulseAnimation();
-        });
+    });
     
     $("#nav-link-contact").on("click", () => {
         gsap.to("#contact-page", {
