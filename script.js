@@ -104,11 +104,22 @@ function preloader() {
         ease: "power3.inOut",
         opacity: 0,
     }, ">-1.7");
+
+    preloadTl.fromTo("#contact-page", {
+        duration: 0.5,
+        ease: "power3.inOut",
+        opacity: 0
+    }, {
+        opacity: 1
+    });
+
+
 }
 preloader();
 
 let standardBlack = "#212121";
 let standardWhite = "#fff";
+let standardGray = "#555555";
 
 function darkModeClicked() {
     let toggleState = true;
@@ -124,15 +135,15 @@ function darkModeClicked() {
         gsap.to("p", {color: standardWhite})
         gsap.to("p", {color: standardWhite})
         gsap.to("h1", {color: standardWhite})
-        gsap.to("h2", {color: standardWhite})
+        gsap.to("h2:not(.logo)", {color: standardWhite})
     } else {
         toggleAnimation.reverse();
         gsap.to("body", {backgroundColor: standardWhite})
         gsap.to(".navbar", {backgroundColor: standardWhite})
         gsap.to("#toggler a", {color: standardBlack})
-        gsap.to("p", {color: standardBlack})
+        gsap.to("p", {color: standardGray})
         gsap.to("h1", {color: standardBlack})
-        gsap.to("h2", {color: standardBlack})
+        gsap.to("h2:not(.logo)", {color: standardBlack})
       }
       toggleState = !toggleState;
     });
