@@ -155,6 +155,7 @@ function darkModeClicked() {
         gsap.to("p", {color: standardWhite})
         gsap.to("h1", {color: standardWhite})
         gsap.to("h2:not(.logo)", {color: standardWhite})
+        gsap.to(".card", {backgroundColor: standardGray})
     } else {
         toggleAnimation.reverse();
         gsap.to("body", {backgroundColor: standardWhite})
@@ -163,6 +164,7 @@ function darkModeClicked() {
         gsap.to("p", {color: standardGray})
         gsap.to("h1", {color: standardBlack})
         gsap.to("h2:not(.logo)", {color: standardBlack})
+        gsap.to(".card", {backgroundColor: standardWhite})
       }
       toggleState = !toggleState;
     });
