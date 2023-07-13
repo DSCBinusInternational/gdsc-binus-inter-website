@@ -24,7 +24,7 @@ function teamCardInfiniteScroll() {
 teamCardInfiniteScroll()
 gsap.registerPlugin(ScrollTrigger);
 gsap.to("footer", {
-    x: "-7.5%", 
+    x: "5%", 
     scrollTrigger: {
         trigger: "footer",
         scrub: 3,
@@ -169,7 +169,7 @@ function darkModeClicked() {
       toggleState = !toggleState;
     });
 }
-  darkModeClicked();
+darkModeClicked();
 
 // jQuery
 $(document).ready(() => {
