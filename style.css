@@ -84,24 +84,6 @@ html {
     background-color: #fff;
 }
 
-/* contact page */
-#contact-page {
-    z-index: 1;
-    transform: translateY(-100%);
-    background-color: #fff;
-    border-bottom: solid var(--illustration-bg);
-    position: fixed;
-    width: 100vw;
-    height: 24rem;
-    padding-inline: 10rem;
-}
-
-#cancel-icon-box {
-    display: flex;
-    justify-content: end;
-    fill: var(--illustration-bg);
-}
-
 /* bootstrap container */
 .container-fluid {
     padding-inline: 8.375em;
@@ -803,6 +785,7 @@ html {
 footer {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     padding-inline: 2%;
     transform: translateX(-110%);
     margin-inline: 0;
@@ -812,6 +795,10 @@ footer {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 20px -10px 15px hsla(0, 0%, 40%, 0.3);
+}
+
+#footerLeft {
+    width: 100%;
 }
 
 #footerRight {
